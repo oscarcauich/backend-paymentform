@@ -1,0 +1,20 @@
+{
+  "name": "backend-paymentform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/oscarcauich/backend-paymentform.git",
+  "author": "Oscar Cauich <ocauich@gravitypayments.com>",
+  "license": "MIT",
+  "scripts": {
+    "start-mongo": "mkdir mongo-db; mongod --dbpath mongo-db",
+    "stop-mongo": "killall mongod",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7",
+    "morgan": "^1.8.2"
+  }
+}
