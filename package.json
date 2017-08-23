@@ -8,13 +8,20 @@
   "scripts": {
     "start-mongo": "mkdir mongo-db; mongod --dbpath mongo-db",
     "stop-mongo": "killall mongod",
+    "test": "nyc mocha",
     "start": "node index.js"
   },
   "dependencies": {
     "cors": "^2.8.4",
     "dotenv": "^4.0.0",
+    "expect": "^1.20.2",
     "express": "^4.15.4",
     "mongoose": "^4.11.7",
     "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "superagent": "^3.6.0"
   }
 }
